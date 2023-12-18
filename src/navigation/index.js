@@ -12,8 +12,8 @@ function AppNavigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Welcome' screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="RecipeDetail" options={{presentation: 'fullScreenModal'}} component={RecipeDetailScreen} />
       </Stack.Navigator>
     </NavigationContainer>
